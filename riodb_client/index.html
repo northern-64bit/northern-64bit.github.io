@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles.css">
+    <title>RioDB Headless Client</title>
+</head>
+<html lang="en">
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox" />
+
+            <!--Some spans to act as a hamburger.-->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+                <a href="index.html"><li>Home</li></a>
+                <a href="contribute.html"><li>Contribute</li></a>
+                <a href="https://www.riodb.org"><li>RioDB</li></a>
+                <a href="https://github.com/northern-64bit/RioDB-Headless-Client" target="_blank"><li>Github</li></a>
+            </ul>
+        </div>
+    </nav>
+    <body>
+        <br>
+        <h1>RioDB Headless Client</h1>
+        <h3><i>
+            A headless client for
+            <a href="https://github.com/northern-64bit/RioDB-Headless-Client" target="_blank">RioDB</a>.
+        </i></h3>
+        <h2>Installation</h2>
+        <ol>
+            <li>
+                Make sure to have
+                <a href="https://github.com/northern-64bit/RioDB-Headless-Client" target="_blank">RioDB</a>
+                properly setup.
+            </li>
+            <li>Install/Clone this repository</li>
+            <li>Done!</li>
+        </ol>
+        <h2>Start the client</h2>
+        <ol><div class="inline">
+            <li>Start your RioDB instance (for example via the .bat file)</li>
+            <li>Compile the client: <code>javac -d . RiodbClient.java PostHTTP.java PostHTTPS.java</code></li>
+            <li>Run the compiled code: <code>java client.RiodbClient</code></li>
+            <li>Enter the setup settings
+                <ol type="o">
+                    <li>Enter the selected host</li>
+                    <li>
+                        If the host is HTTPS then you have to enter your username and password for your RioDB instance.
+                    </li>
+                </ol>
+            </li>
+            <li>
+                Finished! Use the client in order to communicate with the RioDB instance. You can enter
+                <code>system status;</code> to see if it works.
+            </li>
+        </div></ol>
+        <h2>Commands</h2>
+        <ul><div class="inline">
+            <li><code>clear</code> // clears the terminal</li>
+            <li><code>exit;</code> // exit the terminal</li>
+            <li><code>.</code> // reset your statement</li>
+            <li><code>;</code> // end your statement</li>
+        </div></ul>
+        <h2>Contribute</h2>
+        <p>For more information about contributing <a href="contribute.html">click here</a>.</p>
+        <h2>Having trouble?</h2>
+        <p>
+            If you have trouble connecting to the client, check your localhost and the settings of your internet network
+            (for instance: can I ping?). If this doesn't work or if you have any other question, please message
+            <a href="../index.html">northern-64bit</a> or open a
+            <a href="https://github.com/northern-64bit/RioDB-Headless-Client/issues" target="_blank">issue</a> on GitHub.
+        </p>
+    </body>
+</html>
